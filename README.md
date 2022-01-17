@@ -1,0 +1,1 @@
+# Simple illustration of the class and object in java
