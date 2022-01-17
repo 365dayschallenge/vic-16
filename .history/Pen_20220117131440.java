@@ -25,7 +25,6 @@ public class Pen {
         Pen Bic = new Pen();
 
         Bic.Second();
-        System.out.println("What do you want to do to the pen?");
         // First way to get input
         Console console = System.console();
         Bic.action = console.readLine();

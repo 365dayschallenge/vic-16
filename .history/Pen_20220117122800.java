@@ -1,6 +1,3 @@
-import java.io.Console;
-import java.util.Scanner;
-
 public class Pen {
     public void Show() {
         System.out.println("Hello World from show");
@@ -15,7 +12,7 @@ public class Pen {
         Color = "red";
         type = "Bic";
         Action = false;
-
+        action = "open";
     }
 
     public static void main(String[] args) {
@@ -25,14 +22,6 @@ public class Pen {
         Pen Bic = new Pen();
 
         Bic.Second();
-        System.out.println("What do you want to do to the pen?");
-        // First way to get input
-        Console console = System.console();
-        Bic.action = console.readLine();
-        // Alternative way to get input
-        Scanner scanner = new Scanner(System.in);
-        Bic.action = scanner.nextLine();
-        scanner.close();
         System.out.println("The pen type is " + Bic.type + " and the color is " + Bic.Color);
 
         if (Bic.action == "open") {
@@ -41,6 +30,6 @@ public class Pen {
         if (Bic.action == "close") {
             Bic.Action = false;
         }
-        System.out.println("Your pen is " + Bic.action + "ed" + " hence the state is " + Bic.Action);
+        System.out.println("Your pen is " + Bic.Action);
     }
 }
